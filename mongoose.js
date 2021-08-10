@@ -9,7 +9,7 @@ const Product = require("./models/product");
 
 mongoose
   .connect(
-    "mongodb+srv://Niko:eKkVDD5ZQ44JsDn@cluster0.arfc1.mongodb.net/products_test?retryWrites=true&w=majority"
+    "mongodb+srv://Niko:@cluster0.arfc1.mongodb.net/products_test?retryWrites=true&w=majority" // deleted the password from the URL for security reasons. 
   )
   .then(() => {
     console.log("Connected to the database!");
