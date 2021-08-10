@@ -3,7 +3,7 @@
 const MongoClient = require("mongodb").MongoClient; // mongodb client class.
 
 const url =
-  "mongodb+srv://Niko:eKkVDD5ZQ44JsDn@cluster0.arfc1.mongodb.net/products_test?retryWrites=true&w=majority";
+  "mongodb+srv://Niko:@cluster0.arfc1.mongodb.net/products_test?retryWrites=true&w=majority"; // Note this will not work, I have deleted the password from this url for security. 
 
 const createProduct = async (req, res, next) => {
   const newProduct = {
